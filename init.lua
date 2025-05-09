@@ -60,6 +60,7 @@ lspconfig.pyright.setup{}
 lspconfig.clangd.setup({
   name = 'clangd',
   cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+  filetypes = { "c", "cpp" },
   initialization_options = {
     fallback_flags = { '-std=c++23' },
   },
